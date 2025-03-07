@@ -7,5 +7,5 @@ while True:
 			print("Num is even")
 		else:
 			print("Num is odd")
-	except ValueError as error:
-		print(error)
+	except:
+		print("Invalid input!")

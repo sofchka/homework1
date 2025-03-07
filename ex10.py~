@@ -19,7 +19,7 @@ while True:
 	try:
 		n = int(input("Enter: "))
 		if n < 0:
-			print("Non-negative!")
+			print("Non-negative!: ")
 		else:
 			break
 	except ValueError:

@@ -1,4 +1,3 @@
-
 def calculator(argument):
 	parentheses = 0
 	for char in argument:
@@ -50,4 +49,3 @@ for test in test_cases:
 	print(f"Testing: {test}")
 	calculator(test)
 	print("---")
-

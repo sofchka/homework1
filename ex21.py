@@ -1,17 +1,22 @@
 def is_armstrong(n):
-	strNum = str(n)
-	lenght = len(strNum)
+	length = len(str(n))
 	res = 0
 	tmp = n
 	while tmp > 0:
-		res += (tmp % 10) ** lenght
+		res += (tmp % 10) ** length
 		tmp //= 10
-	return (n == res)
+	return n == res
 
 
+while True:
+	try:
+		num = int(input("Enter your number: "))
+		break
+	except ValueError:
+		print("invalid!")
 
-num = int(input("Enter your number: "))
 if is_armstrong(num):
-    print("Is an Armstrong")
+	print("Is an Armstrong")
 else:
-    print("Is NOT")
+	print("Is NOT")
+

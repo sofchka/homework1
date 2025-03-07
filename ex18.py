@@ -1,5 +1,11 @@
 arr = []
 for i in range(3):
-	arr.append(int(input("Enter num: ")))
+	while True:
+		try:
+			num = int(input("Enter num: "))
+			arr.append(num)
+			break
+		except ValueError:
+			print("Invalid input!")
 
 print("max is", max(arr))
